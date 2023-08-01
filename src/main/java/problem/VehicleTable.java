@@ -22,7 +22,7 @@ public class VehicleTable {
                 double fc = Double.parseDouble(parts[6]);
                 double vc = Double.parseDouble(parts[7]);
                 int startCenter = graph.id2idx(parts[5]);
-                Vehicle vehicle = new Vehicle(capa, fc, vc, vehTon, vehNum, startCenter);
+                Vehicle vehicle = new Vehicle(0, capa, fc, vc, vehTon, vehNum, startCenter, graph);
                 table.add(vehicle);
             }
         }
