@@ -25,6 +25,8 @@ public class VehicleTable {
                 Vehicle vehicle = new Vehicle(0, capa, fc, vc, vehTon, vehNum, startCenter, graph);
                 table.add(vehicle);
             }
+        } catch (IOException e) {
+            e.printStackTrace();
         }
 
         Collections.sort(table);

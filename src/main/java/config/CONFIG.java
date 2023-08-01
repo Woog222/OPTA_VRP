@@ -27,7 +27,7 @@ public class CONFIG {
     /**
      * FILE_DIR
      */
-    public static final String GRAPH_DIR = "data/os_matrix.txt";
+    public static final String GRAPH_DIR = "data/od_matrix.txt";
     public static final String ORDER_DIR = "data/orders.txt";
     public static final String VEHICLE_DIR = "data/vehicles.txt";
     public static final String TERMINAL_DIR = "data/terminals.txt";

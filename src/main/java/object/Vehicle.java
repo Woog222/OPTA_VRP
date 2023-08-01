@@ -17,7 +17,7 @@ public class Vehicle implements Comparable<Vehicle> {
     /**
      * FIXED INFOS
      */
-    private double capa, fc, vc, vehTon,  travelDistance;
+    private double capa, fc, vc, vehTon, travelDistance;
     private String veh_num;
     private int startCenter, freeTime, varTime, varLoc;
 

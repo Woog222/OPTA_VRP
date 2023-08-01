@@ -5,6 +5,8 @@ import java.io.FileReader;
 import java.io.IOException;
 import java.util.HashMap;
 import java.util.Map;
+import java.util.ArrayList;
+import java.util.List;
 
 import static config.CONFIG.GRAPH_SIZE;
 
@@ -33,7 +35,7 @@ class Edge {
 
 public class Graph {
 
-    private final Edge[][] table;
+    public final Edge[][] table;
     private Map<String, Integer> IDX;
     private Map<Integer, String> ID;
     private int idx = 0;

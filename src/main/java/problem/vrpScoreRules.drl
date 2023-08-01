@@ -1,0 +1,15 @@
+import Vehicle;
+import Location;
+import VRP;
+
+rule "calculateTotalCost"
+    when
+        $solution : VRPSolution()
+        $vehicle : Vehicle() from $solution.getVehicles()
+        $locationLost : List( size > 1 ) from $vehicle.getRoute()
+        $from : Location() from $locationList
+        $to : Location() from $locationList
+    then
+        int cost = calculateDistance($from, $to);
+        scoreHolder.addSoftConstraintMatch(kcontext, -distance);
+end

@@ -1,0 +1,14 @@
+<solver>
+    <scanAnnotatedClasses>
+        <entityClass>object.Vehicle</entityClass>
+        <entityClass>object.Order</entityClass>
+        <entityClass>object.Location</entityClass>
+    </scanAnnotatedClasses>
+
+    <scoreDirectorFactory>
+        <bendableHardSoft>
+            <scoreDrl>problem.vrpScoreRules.drl</scoreDrl>
+        </bendableHardSoft>
+    </scoreDirectorFactory>
+
+</solver>
